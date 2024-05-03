@@ -1,0 +1,286 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Your API Title",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/bankuser/enterUser": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "",
+        "operationId": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/getUser/{id}": {
+      "get": {
+        "tags": [
+          ""
+        ],
+        "summary": "",
+        "operationId": "",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/getAllUser": {
+      "get": {
+        "tags": [
+          ""
+        ],
+        "summary": "",
+        "operationId": "",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/editUser/{id}": {
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "summary": "",
+        "operationId": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/delete/{id}": {
+      "delete": {
+        "tags": [
+          ""
+        ],
+        "summary": "",
+        "operationId": "",
+        "responses": {
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/getByName/{name}": {
+      "post": {
+        "tags": [
+          ""
+        ],
+        "summary": "",
+        "operationId": "",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bankuser/getByNameAndAge/{name}": {
+      "post": {
+        "tags": [
+          ""
+        ],
+        "summary": "",
+        "operationId": "",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Address": {
+        "properties": {
+          "pinCode": {
+            "type": "integer",
+            "title": "pinCode"
+          },
+          "houseNum": {
+            "type": "integer",
+            "title": "houseNum"
+          },
+          "atPost": {
+            "type": "string",
+            "title": "atPost"
+          },
+          "policeStation": {
+            "type": "string",
+            "title": "policeStation"
+          },
+          "user": {
+            "type": "unknown",
+            "title": "user"
+          }
+        },
+        "type": "object",
+        "required": [],
+        "title": "Address"
+      },
+      "User": {
+        "properties": {
+          "userName": {
+            "type": "string",
+            "title": "userName"
+          },
+          "emailId": {
+            "type": "string",
+            "title": "emailId"
+          },
+          "userAge": {
+            "type": "integer",
+            "title": "userAge"
+          }
+        },
+        "type": "object",
+        "required": [],
+        "title": "User"
+      }
+    }
+  }
+}

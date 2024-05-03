@@ -1,1 +1,26 @@
-{"dev":{},"qa":{},"integration":{},"staging":{},"uat":{},"prod":{}}
+{
+  "dev": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  },
+  "qa": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  },
+  "integration": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  },
+  "staging": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  },
+  "uat": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  },
+  "prod": {
+    "data_57054": "standard_user",
+    "data_636182": "secret_sauce"
+  }
+}

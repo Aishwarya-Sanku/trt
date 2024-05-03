@@ -1,0 +1,148 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\playwright.config.js",
+    "rootDir": "C:/Users/sanku.aishwarya/Documents/harbingerProjects/demo_test/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\node_modules\\@reportportal\\agent-js-playwright\\build\\index.js",
+        {
+          "enabled": false,
+          "includeTestSteps": true,
+          "token": "c7c26122-2def-42b0-a6af-baf17cd1b204",
+          "endpoint": "http://10.10.90.150:8080/api/v1",
+          "project": "Harbinger",
+          "launch": "Harbinger - Demo execution",
+          "restClientConfig": {
+            "timeout": 120000,
+            "maxContentLength": null,
+            "maxBodyLength": null
+          },
+          "attributes": [
+            {
+              "key": "environment",
+              "value": "qa"
+            }
+          ],
+          "description": "Automation execution for Harbinger"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/sanku.aishwarya/Documents/harbingerProjects/demo_test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sanku.aishwarya/Documents/harbingerProjects/demo_test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.43.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test_001.spec.js",
+      "file": "test_001.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Harbinger Test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 1246,
+                  "error": {
+                    "message": "Error: EBUSY: resource busy or locked, copyfile 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571.network' -> 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571-pwnetcopy-1.network'",
+                    "stack": "Error: EBUSY: resource busy or locked, copyfile 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571.network' -> 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571-pwnetcopy-1.network'"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: EBUSY: resource busy or locked, copyfile 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571.network' -> 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\traces\\3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571-pwnetcopy-1.network'"
+                    },
+                    {
+                      "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\sanku.aishwarya\\Documents\\harbingerProjects\\demo_test\\test-results\\.playwright-artifacts-0\\6d740daaef0aefc78cbc1f7248370ce2.zip'"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-02T10:10:27.236Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3a9dbfcb5fb986b1f8fb-2cf60191721d271cd571",
+          "file": "test_001.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-05-02T10:08:52.951Z",
+    "duration": 96371.25200000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
